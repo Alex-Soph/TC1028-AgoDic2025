@@ -17,3 +17,32 @@ Ejemplo de ejecución:
 
 IMC: 18.7 => Obesidad
 """
+#Alexhia Sophia Pérez Escobar || A01825459
+
+
+print ("\t<<--------  CALCULADORA DE IMC -------->>")
+print ("¡Bienvenido!")
+print ()
+
+peso = float(input("Ingresa tu peso en kg: "))
+est = float(input("Ingresa tu estatura en metros: "))
+
+
+imc = peso / (est ** 2)
+
+
+print (f"IMC: {imc:.1f}")
+
+if imc < 18.5:
+    print ("Bajo peso")
+
+elif imc >= 18.5 and imc < 25:
+    print ("Normal")
+
+elif imc >= 25 and imc < 30:
+    print ("Sobrepeso")
+    
+else:
+    print ("Obesidad")
+
+print ("\t<<---------- ¡Gracias! ---------->>")
